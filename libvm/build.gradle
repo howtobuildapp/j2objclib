@@ -1,0 +1,11 @@
+apply plugin: 'java-library'
+//apply from: './upload.gradle'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    compileOnly "com.google.j2objc:j2objc-annotations:1.3"
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"

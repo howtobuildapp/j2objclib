@@ -1,0 +1,4 @@
+include ':libservice'
+include ':libvm'
+include ':app'
+rootProject.name = "j2objclib"
