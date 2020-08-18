@@ -6,7 +6,7 @@ signing {
 }
 
 def group = 'com.github.howtobuildapp'
-def artifact = 'libvm'
+def artifact = 'libservice'
 def type = 'jar'
 def snapshoturl = 'https://oss.sonatype.org/content/repositories/snapshots'
 def stagingurl = 'https://oss.sonatype.org/service/local/staging/deploy/maven2'
@@ -26,12 +26,12 @@ uploadArchives {
                 authentication(userName: OSS_USERNAME, password: OSS_PASSWORD)
             }
             pom.project {
-                name 'j2objclib-libvm'
+                name 'j2objclib-libservice'
                 version ver
                 artifactId artifact
                 groupId group
                 packaging type
-                description 'lib vm'
+                description 'lib service'
                 url 'https://github.com/howtobuildapp/j2objclib'
 
                 scm {
